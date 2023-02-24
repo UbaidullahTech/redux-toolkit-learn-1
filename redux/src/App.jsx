@@ -17,15 +17,20 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <h1>{count}</h1>
+        <button onClick={() => setCount((count) => count + 5)}>
+          Add 5
         </button>
+        <button style={{padding: "10"}} onClick={() => setCount((count) => count - 5)}>
+          Subtract 5
+        </button>
+
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Click on the Vite and React logos to learn more Ubaidullah
       </p>
     </div>
   )
